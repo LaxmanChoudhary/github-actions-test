@@ -63,7 +63,7 @@ def update_git_repo(paths: list[Path]) -> None:
     repo = git.Repo(ROOT)
     for path in paths:
         repo.git.add(path)
-    message = f"writing to..."
+    message = f"updated headers..."
 
     user = repo.git.config("--get", "user.name")
     email = repo.git.config("--get", "user.email")
